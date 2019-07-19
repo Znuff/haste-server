@@ -1,5 +1,5 @@
 body {
-	background: #002B36;
+	background: #23241f;
 	padding: 20px 50px;
 	margin: 0px;
 }
@@ -13,23 +13,27 @@ textarea {
 	padding: 0px;
 	width: 100%;
 	height: 100%;
-	font-family: monospace;
+	font-family: 'Fira Code', monospace;
 	outline: none;
 	resize: none;
 	font-size: 13px;
 }
 
+code {
+  font-family: 'Fira Code', monospace;
+}
+
 /* the line numbers */
 
 #linenos {
-  color: #7d7d7d;
+  color: rgba(125, 125, 125, 0.5);
 	z-index: -1000;
 	position: absolute;
 	top: 20px;
 	left: 0px;
 	width: 30px; /* 30 to get 20 away from box */
 	font-size: 13px;
-	font-family: monospace;
+	font-family: 'Fira Code', monospace;
 	text-align: right;
 }
 
@@ -62,11 +66,11 @@ textarea {
 #box1 {
 	padding: 5px;
 	text-align: center;
-	background: #00222b;
+	background: #161712;
 }
 
 #box2 {
-	background: #08323c;
+	background: #0A0B06;
 	font-size: 0px;
 	padding: 0px 5px;
 }
@@ -112,7 +116,7 @@ textarea {
 }
 
 #box3, #messages li {
-	background: #173e48;
+	background: #3D3E39;
 	font-family: Helvetica, sans-serif;
 	font-size: 12px;
 	line-height: 14px;
