@@ -2,13 +2,15 @@
 
 	<head>
 
-		<title>hastebin</title>
+		<title>pastie.dev</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="solarized_dark.css"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/styles/monokai-sublime.min.css">
 		<link rel="stylesheet" type="text/css" href="application.css"/>
 
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script type="text/javascript" src="highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 		<script type="text/javascript" src="application.min.js"></script>
 
 		<meta name="robots" content="noindex,nofollow"/>
@@ -31,7 +33,7 @@
 			}, 1000);
 			// Construct app and load initial path
 			$(function() {
-				app = new haste('hastebin', { twitter: true });
+				app = new haste('pastie.dev', { twitter: true });
 				handlePop({ target: window });
 			});
 		</script>
