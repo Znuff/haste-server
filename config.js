@@ -1,9 +1,9 @@
 {
 
-  "host": "0.0.0.0",
+  "host": "127.0.0.1",
   "port": 7777,
 
-  "keyLength": 10,
+  "keyLength": 6,
 
   "maxLength": 400000,
 
@@ -20,10 +20,11 @@
   ],
 
   "keyGenerator": {
-    "type": "phonetic"
+    "type": "random"
   },
 
   "rateLimits": {
+    "whitelist": ['127.0.0.1'],
     "categories": {
       "normal": {
         "totalRequests": 500,
@@ -33,10 +34,11 @@
   },
 
   "storage": {
-    "type": "memcached",
-    "host": "127.0.0.1",
-    "port": 11211,
-    "expire": 2592000
+	  "type": "redis",
+	  "host": "localhost",
+	  "port": 6379,
+	  "db": 2,
+    "expire": 604800
   },
 
   "documents": {

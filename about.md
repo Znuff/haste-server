@@ -4,7 +4,7 @@ Sharing code is a good thing, and it should be _really_ easy to do it.
 A lot of times, I want to show you something I'm seeing - and that's where we
 use pastebins.
 
-Haste is the prettiest, easiest to use pastebin ever made.
+pastie.dev is a fork of haste-server (running on hastebin.com).
 
 ## Basic Usage
 
@@ -19,7 +19,7 @@ Most of the time I want to show you some text, it's coming from my current
 console session.  We should make it really easy to take code from the console
 and send it to people.
 
-`cat something | haste` # https://hastebin.com/1238193
+`cat something | haste` # https://pastie.dev/1238193
 
 You can even take this a step further, and cut out the last step of copying the
 URL with:
@@ -38,12 +38,12 @@ right now.
 
 ## Duration
 
-Pastes will stay for 30 days from their last view.  They may be removed earlier
+Pastes will stay for 7 days from their last view.  They may be removed earlier
 and without notice.
 
 ## Privacy
 
-While the contents of hastebin.com are not directly crawled by any search robot
+While the contents of pastie.dev are not directly crawled by any search robot
 that obeys "robots.txt", there should be no great expectation of privacy.  Post
 things at your own risk. Not responsible for any loss of data or removed
 pastes.
@@ -53,9 +53,10 @@ pastes.
 Haste can easily be installed behind your network, and it's all open source!
 
 * [haste-client](https://github.com/seejohnrun/haste-client)
-* [haste-server](https://github.com/seejohnrun/haste-server)
+* [haste-server](https://github.com/Znuff/haste-server)
 
 ## Author
 
+Changes by Znuff <znuffy@gmail.com>
 Code by John Crepezzi <john.crepezzi@gmail.com>
 Key Design by Brian Dawson <bridawson@gmail.com>
