@@ -71,23 +71,24 @@ code {
 
 #box2 {
 	background: #0A0B06;
-	font-size: 0px;
+	/* font-size: 0px; */
 	padding: 0px 5px;
 }
 
 #box1 a.logo, #box1 a.logo:visited {
 	display: inline-block;
-	background: url(logo.png);
-	width: 126px;
-	height: 42px;
+	background: url(logo_pastie.svg);
+	height: 50px;
+  width: 100%;
 }
 
 #box1 a.logo:hover {
-	background-position: 0 bottom;
+  filter: drop-shadow(0 0 2px rgba(255,255,255,.5));
 }
 
 #box2 .function {
-	background: url(function-icons.png);
+	/* background: url(function-icons.png); */
+  background-color: #0A0B06;
 	width: 32px;
 	height: 37px;
 	display: inline-block;
@@ -107,7 +108,7 @@ code {
 	display: block;
 	height: 5px;
 	width: 10px;
-	background: url(hover-dropdown-tip.png);
+	/* background: url(hover-dropdown-tip.png); */
 	bottom: 0px;
 	position: absolute;
 	margin: auto;
@@ -133,26 +134,12 @@ code {
 	font-weight: normal;
 }
 
-#box2 .function.save { background-position: -5px top; }
-#box2 .function.enabled.save { background-position: -5px center; }
-#box2 .function.enabled.save:hover { background-position: -5px bottom; }
+#box2 .button-picture{ border-width: 0; font-size: 125%; }
 
-#box2 .function.new { background-position: -42px top; }
-#box2 .function.enabled.new { background-position: -42px center; }
-#box2 .function.enabled.new:hover { background-position: -42px bottom; }
-
-#box2 .function.duplicate { background-position: -79px top; }
-#box2 .function.enabled.duplicate { background-position: -79px center; }
-#box2 .function.enabled.duplicate:hover { background-position: -79px bottom; }
-
-#box2 .function.raw { background-position: -116px top; }
-#box2 .function.enabled.raw { background-position: -116px center; }
-#box2 .function.enabled.raw:hover { background-position: -116px bottom; }
-
-#box2 .function.twitter { background-position: -153px top; }
-#box2 .function.enabled.twitter { background-position: -153px center; }
-#box2 .function.enabled.twitter:hover { background-position: -153px bottom; }
-#box2 .button-picture{ border-width: 0; font-size: inherit; }
+#box2 .function { color: rgba(255,255,255,0.2); }
+#box2 .function.enabled { color: #fff; }
+#box2 .function.enabled:hover { color: #f92672; }
+#box2 .function.enabled.twitter { color: #38A1F3; }
 
 #messages {
 	position:fixed;
@@ -164,7 +151,7 @@ code {
 }
 
 #messages li {
-	background:rgba(23,62,72,0.8);
+	background: #161712;
 	margin:0 auto;
 	list-style:none;
 }
