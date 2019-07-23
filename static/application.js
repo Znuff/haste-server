@@ -69,6 +69,7 @@ haste_document.prototype.save = function(data, callback) {
       _this.locked = true;
       _this.key = res.key;
       var high = hljs.highlightAuto(data);
+      console.log('Detected Languge: ' + high.language);
       callback(null, {
         value: high.value,
         key: res.key,
