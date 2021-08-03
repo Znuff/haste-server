@@ -13,14 +13,14 @@ textarea {
 	padding: 0px;
 	width: 100%;
 	height: 100%;
-	font-family: 'Fira Code', monospace;
+	font-family: 'Fira Mono', monospace;
 	outline: none;
 	resize: none;
 	font-size: 13px;
 }
 
 code {
-  font-family: 'Fira Code', monospace;
+  font-family: 'Fira Mono', monospace;
 }
 
 /* the line numbers */
@@ -33,7 +33,7 @@ code {
 	left: 0px;
 	width: 30px; /* 30 to get 20 away from box */
 	font-size: 13px;
-	font-family: 'Fira Code', monospace;
+	font-family: 'Fira Mono', monospace;
 	text-align: right;
 }
 
