@@ -5,7 +5,7 @@
 
   "keyLength": 6,
 
-  "maxLength": 400000,
+  "maxLength": 2048000,
 
   "staticMaxAge": 86400,
 
@@ -24,7 +24,6 @@
   },
 
   "rateLimits": {
-    "whitelist": ['127.0.0.1'],
     "categories": {
       "normal": {
         "totalRequests": 500,
@@ -38,7 +37,7 @@
 	  "host": "localhost",
 	  "port": 6379,
 	  "db": 2,
-    "expire": 604800
+    "expire": 31536000
   },
 
   "documents": {

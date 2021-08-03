@@ -27,6 +27,7 @@ URL with:
 * osx: `cat something | haste | pbcopy`
 * linux: `cat something | haste | xsel`
 * windows: check out [WinHaste](https://github.com/ajryan/WinHaste)
+* via netcat: `cat something | nc pastie.dev 9999`
 
 After running that, the STDOUT output of `cat something` will show up at a URL
 which has been conveniently copied to your clipboard.
@@ -38,7 +39,7 @@ right now.
 
 ## Duration
 
-Pastes will stay for 7 days from their last view.  They may be removed earlier
+Pastes will stay for 365 days from their last view.  They may be removed earlier
 and without notice.
 
 ## Privacy

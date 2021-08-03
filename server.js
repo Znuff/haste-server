@@ -7,6 +7,7 @@ var connect = require('connect');
 var route = require('connect-route');
 var connect_st = require('st');
 var connect_rate_limit = require('connect-ratelimit');
+var net = require('net');
 
 var DocumentHandler = require('./lib/document_handler');
 
@@ -151,5 +152,32 @@ app.use(connect_st({
 }));
 
 http.createServer(app).listen(config.port, config.host);
+
+var server = net.createServer();
+server.listen({
+  host: '0.0.0.0',
+  port: 9999,
+  exclusive: true
+});
+
+server.on('connection',function(socket){
+  socket.setEncoding('utf8');
+  socket.setTimeout(2000);
+
+  var data = ''
+
+  socket.on('data',function(buffer) {
+    data += buffer;
+  });
+
+  socket.on('timeout', function() {
+    documentHandler.handleRaw(data, socket);
+  });
+
+  socket.on('error', (err) =>
+    console.log(err.stack)
+  )
+
+});
 
 winston.info('listening on ' + config.host + ':' + config.port);
